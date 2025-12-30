@@ -6,7 +6,8 @@
 
 ## 📋 项目概述
 
-**MyPhishing-BacKend** 是一款AI驱动的钓鱼邮件检测网关，通过多源威胁情报集成、机器学习模型和沙箱分析，实现对钓鱼邮件的智能识别、告警和拦截。
+**MyPhishing-BacKend** 是一款AI驱动的钓鱼邮件检测网关，通过多源威胁情报集成、机器学习模型和沙箱分析，实现对钓鱼邮件的智能识别、告警和拦截。   
+**前端项目地址：**[MyPhishing-Web](https://github.com/HaoY-l/MyPhishing-Web)
 
 ### 核心功能
 

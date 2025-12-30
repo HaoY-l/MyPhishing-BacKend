@@ -1,7 +1,7 @@
 # ==============================
 # Builder 阶段
 # ==============================
-FROM python:3.12-slim AS builder
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
 
@@ -45,13 +45,13 @@ RUN . /opt/venv/bin/activate && \
     find /opt/venv -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true && \
     find /opt/venv -type d -name "tests" -exec rm -rf {} + 2>/dev/null || true && \
     find /opt/venv -type d -name "test" -exec rm -rf {} + 2>/dev/null || true && \
-    rm -rf /opt/venv/lib/python3.12/site-packages/pip* \
-           /opt/venv/lib/python3.12/site-packages/setuptools*
+    rm -rf /opt/venv/lib/python3.11/site-packages/pip* \
+           /opt/venv/lib/python3.11/site-packages/setuptools*
 
 # ==============================
 # Runtime 阶段
 # ==============================
-FROM python:3.12-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 

@@ -1,0 +1,7 @@
+{
+  "EMAIL_INTERCEPT_ENABLED_1": false,
+  "EMAIL_ALERT_ENABLED_1": true,
+  "EMAIL_INTERCEPT_ENABLED_2": true,
+  "EMAIL_ALERT_ENABLED_2": true,
+  "NOTIFICATION_EMAIL": "haoyu@hyinfo.cc"
+}

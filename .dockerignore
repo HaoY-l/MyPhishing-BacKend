@@ -1,0 +1,57 @@
+# 虚拟环境
+venv/
+.venv/
+env/
+.env
+.env.local
+*.env.backup
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+
+# 日志
+*.log
+logs/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# 数据/配置（容器外挂载）
+data/
+config/
+chroma_db/
+
+# 文档
+*.md
+README*
+LICENSE
+docs/
+*.txt
+!requirements.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# 临时文件
+*.tmp
+*.bak
+*.orig
+.DS_Store

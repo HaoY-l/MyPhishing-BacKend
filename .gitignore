@@ -1,0 +1,12 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+.DS_Store
+venv/
+.env
+info.txt
+__pycache__
+钓鱼邮件检测本地知识库搭建方案.md
+app.log
+bge-small/
+chroma_db/
+IP、域名、文件哈希风险评分判定逻辑文档.md
+mail_test.py

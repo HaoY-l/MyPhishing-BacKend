@@ -10,3 +10,4 @@ bge-small/
 chroma_db/
 IP、域名、文件哈希风险评分判定逻辑文档.md
 mail_test.py
+*.log

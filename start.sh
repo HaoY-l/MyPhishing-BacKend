@@ -12,7 +12,7 @@ else
     echo "🖥️  检测到宿主机环境"
     IN_DOCKER=false
     VENV=./venv/bin
-    PYTHON=$VENV/python3.11
+    PYTHON=$VENV/python3
     GUNICORN=$VENV/gunicorn
     CELERY=$VENV/celery
 fi

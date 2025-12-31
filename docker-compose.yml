@@ -14,9 +14,10 @@ services:
       - TZ=Asia/Shanghai  # 添加这行
 
   backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: monday1/myphishing-backend:latest
     container_name: myphishing-app
     ports:
       - "8000:8000"

@@ -223,19 +223,10 @@ docker run -itd -p 6379:6379 redis
 #### 生产环境启动（Docker）
 
 ```bash
-# 1. 构建镜像（首次）
-nohup docker compose --progress=plain build backend --no-cache > build.log 2>&1 &
-
-# 2. 查看构建日志
-tail -f build.log
-
-# 3. 清理构建缓存（可选）
-docker builder prune -af
-
-# 4. 启动容器
+# 1. 启动容器
 docker-compose up -d
 
-# 5. 查看容器日志
+# 2. 查看容器日志
 docker logs <容器ID>
 ```
 

@@ -14,7 +14,7 @@ services:
       - TZ=Asia/Shanghai  # 添加这行
 
   backend:
-    # build:
+    #build:
     #   context: .
     #   dockerfile: Dockerfile
     image: monday1/myphishing-backend:latest

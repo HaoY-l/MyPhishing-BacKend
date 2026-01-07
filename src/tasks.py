@@ -712,12 +712,14 @@ class DetectionEngine:
                 """读取现有config.json配置，适配原始格式（动态获取项目根目录）"""
                 try:
                     current_file = os.path.abspath(__file__)
-                    project_root = os.path.dirname(current_file)  # tasks.py所在目录就是项目根目录
+                    # tasks.py 在 src/ 目录,需要向上一级才是项目根目录
+                    src_dir = os.path.dirname(current_file)  # /project/MyPhishing/src
+                    project_root = os.path.dirname(src_dir)  # /project/MyPhishing ✅
                     
                     # 拼接配置文件路径
                     config_path = os.path.join(project_root, "config", "config.json")
                     
-                    # 打印路径用于调试（确认是否正确）
+                    # 打印路径用于调试
                     logger.info(f"📁 配置文件路径: {config_path}")
                     
                     # 读取配置文件
@@ -745,6 +747,12 @@ class DetectionEngine:
                     
                     logger.info(f"✅ 配置文件读取成功: {config}")
                     return config
+                except FileNotFoundError:
+                    logger.error(f"❌ 配置文件不存在: {config_path}")
+                    return {}
+                except Exception as e:
+                    logger.error(f"❌ 读取配置文件失败: {str(e)}")
+                    return {}
                 
                 except FileNotFoundError:
                     logger.error(f"❌ 配置文件不存在: {config_path}")

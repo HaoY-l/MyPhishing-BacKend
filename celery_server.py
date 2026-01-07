@@ -10,4 +10,4 @@ if project_root not in sys.path:
 
 # 导入 celery_app，保证 worker 能注册任务
 from celery_app import celery_app
-import tasks
+from src import tasks

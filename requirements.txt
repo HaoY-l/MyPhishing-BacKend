@@ -22,3 +22,5 @@ gevent>=24.2
 
 celery>=5.3
 redis>=5.0
+
+pycryptodome==3.19.0
